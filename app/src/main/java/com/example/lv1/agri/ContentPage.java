@@ -15,23 +15,30 @@ public class ContentPage extends AppCompatActivity {
     ViewPagerAdapter viewPagerAdapter;
     TabLayout tabLayout;
 
+    String name;
+
     BaseAdapter baseAdapter;
     UserData userData;
-    String id;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_page);
 
+        Intent intent = getIntent();
+        name = intent.getStringExtra("key");
+
+        baseAdapter = new BaseAdapter(this);
+        userData = baseAdapter.getUser(name);
+
         viewPager = (ViewPager)findViewById(R.id.viewPager);
-        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), userData);
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        baseAdapter = new BaseAdapter(this);
-       // userData = baseAdapter.getUser();
+
+
     }
 
 }

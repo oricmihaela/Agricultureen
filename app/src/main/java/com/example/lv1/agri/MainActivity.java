@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(getBaseContext(), password1,Toast.LENGTH_LONG).show();
                 if(password1.equals(password2)) {
                     Intent intent = new Intent(MainActivity.this, ContentPage.class);
+                    intent.putExtra("key", mail1);
                     startActivity(intent);
                 }
                 else

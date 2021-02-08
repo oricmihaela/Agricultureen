@@ -1,10 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLightBackground">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+       <TextView
+        android:id="@+id/tvLinks"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+           android:layout_marginRight="60dp"
+        android:text="Here you can find useful links for funding in your country!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN OUT"
+            android:textSize="11sp"/>
+        <Button
+            android:id="@+id/btnLogOutLinks"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/signout"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCroatia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/croatia" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Links" />
+        android:text="SERBIA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOSNIA AND HERZEGOVINA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SLOVENIA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUNGARY:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POLAND:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUSSIA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UK:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANADA:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEXICO:"/>
+
+
 </LinearLayout>

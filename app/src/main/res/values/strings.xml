@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Agri</string>
+
+    <string name="croatia"><a href="https://poljoprivreda.gov.hr/vijesti/8">CROATIA</a></string>
 </resources>
