@@ -5,27 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
-    android:backgroundTint="#80FFFFFF"
+    android:background="@drawable/background1"
+    android:backgroundTint="#00FFFFFF"
     android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvAppNameRegister"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agricultureen"
-        android:textSize="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="10dp" />
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/leaf" />
+        <TextView
+            android:id="@+id/tvAppNameRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agricultureen"
+            android:textSize="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="350dp"
+            android:textColor="@color/colorText"
+            android:fontFamily="sans-serif-thin"/>
+
+    </LinearLayout>
     <EditText
         android:id="@+id/etMailRegister"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="mail" />
+        android:hint="mail"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"/>
 
     <EditText
         android:id="@+id/etPasswordRegister"
@@ -33,14 +48,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorTextHint"
+        android:textColor="@color/colorText"/>
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="REGISTER"/>
+        android:text="REGISTER"
+        android:background="@color/colorText"
+        android:textColor="@color/colorBlue"/>
 
 
 </LinearLayout>

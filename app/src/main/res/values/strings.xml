@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">Agri</string>
+    <string name="app_name">Agricultureen</string>
 
     <string name="croatia"><a href="https://poljoprivreda.gov.hr/vijesti/8">CROATIA</a></string>
+    <string name="serbia"><a href="http://www.minpolj.gov.rs/dokumenti/uredbe/?script=lat">SERBIA</a></string>
+    <string name="bosnia"><a href="http://www.mvteo.gov.ba/Content/Read/poljiprivreda-i-ruralni-razvoj">BOSNIA AND HERZEGOVINA</a></string>
+    <string name="slovenia"><a href="https://www.program-podezelja.si/en/">SLOVENIA</a></string>
+    <string name="hungary"><a href="https://enrd.ec.europa.eu/country/hungary_en">HUNGARY</a></string>
+    <string name="poland"><a href="https://www.arimr.gov.pl/o-arimr/information-about-the-agency/forms-of-aid-managed-by-arma/rural-development-programme-for-2014-2020-poland.html">POLAND</a></string>
+    <string name="russia"><a href="https://mcx.gov.ru/en/">RUSSIA</a></string>
+    <string name="UK"><a href="https://www.gov.uk/government/collections/agriculture-in-the-united-kingdom">UK</a></string>
+    <string name="USA"><a href="https://www.usda.gov/">USA</a></string>
+    <string name="canada"><a href="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada/?id=1395690825741">CANADA</a></string>
 </resources>

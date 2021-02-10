@@ -8,98 +8,114 @@
     android:background="@color/colorLightBackground">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBlue"
+        android:layout_weight="3">
 
         <TextView
             android:id="@+id/tvEarnings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Earnings calculator"
-            android:layout_marginRight="195dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SIGN OUT"
-            android:textSize="11sp"/>
-        <Button
-            android:id="@+id/btnLogOutEarnings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/signout"
-            android:layout_marginLeft="5dp"/>
-    </LinearLayout>
-
-
+            android:layout_marginRight="195dp"
+            android:textColor="@color/colorText"/>
 
         <EditText
             android:id="@+id/etAreaCalculator"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Area"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"/>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/etPiceCalculator"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:hint="Price"
-            android:inputType="number"/>
-        <Button
-            android:id="@+id/btnCalculate"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CALCULATE"
-            android:layout_marginLeft="30dp" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etPiceCalculator"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:inputType="number"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"/>
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorText"
+                android:textColor="@color/colorBlue"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResultCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Estimated earnings on this culture:"
+            android:textSize="19sp"
+            android:textColor="@color/colorText"/>
+
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvResultCalculator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="Estimated earnings on this culture:"
-        android:textSize="19sp"/>
-
-    <TextView
-        android:id="@+id/tvPricesTable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Table of prices" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCultures"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_weight="9"
-        android:background="#CCFFFFFF"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDarkBlue"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/tvPricesTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table of prices"
+            android:textColor="@color/colorText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCultures"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="9" />
+
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPurple"
         android:layout_weight="1">
         <EditText
             android:id="@+id/etInsertNew"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            android:hint="Culture name"/>
+            android:hint="Culture name"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"/>
         <EditText
             android:id="@+id/etInsertPrice"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:hint="Culture price"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textColorHint="@color/colorTextHint"
+            android:textColor="@color/colorText"/>
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ADD"/>
+            android:text="ADD"
+            android:background="@color/colorText"
+            android:textColor="@color/colorPurple"/>
     </LinearLayout>
 
 

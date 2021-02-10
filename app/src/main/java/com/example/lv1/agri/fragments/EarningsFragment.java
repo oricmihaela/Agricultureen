@@ -48,8 +48,6 @@ public class EarningsFragment extends Fragment implements View.OnClickListener {
     EditText editTextName;
     EditText editTextPrice;
 
-    Button logOut;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -57,14 +55,6 @@ public class EarningsFragment extends Fragment implements View.OnClickListener {
                 R.layout.earnings_fragment, container, false);
         setUpData();
 
-        this.logOut = (Button)rootView.findViewById(R.id.btnLogOutEarnings);
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         this.editTextAreaCalculator = (EditText)rootView.findViewById(R.id.etAreaCalculator);
         this.editTextPriceCalculator = (EditText)rootView.findViewById(R.id.etPiceCalculator);

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="colorLightBackground">#F9E3D4</color>
+    <color name="colorPrimary">#42ccc8</color>
+    <color name="colorPrimaryDark">#42ccc8</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorLightBackground">#f0edd2</color>
+    <color name="colorNeon">#42ccc8</color>
+    <color name="colorBlue">#4d9cd0</color>
+    <color name="colorDarkBlue">#4976ab</color>
+    <color name="colorPurple">#5c538e</color>
+    <color name="colorDarkPurple">#544267</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextHint">#ffffff</color>
 </resources>

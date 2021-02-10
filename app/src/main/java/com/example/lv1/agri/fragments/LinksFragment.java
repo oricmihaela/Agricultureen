@@ -19,9 +19,17 @@ import com.example.lv1.agri.R;
 
 public class LinksFragment extends Fragment {
 
-    Button logOut;
 
     TextView croatia;
+    TextView serbia;
+    TextView bosnia;
+    TextView slovenia;
+    TextView hungary;
+    TextView poland;
+    TextView russia;
+    TextView uk;
+    TextView usa;
+    TextView canada;
 
     @Nullable
     @Override
@@ -29,17 +37,27 @@ public class LinksFragment extends Fragment {
          View rootView = inflater.inflate(
                  R.layout.links_fragment, container, false);
 
-        this.logOut = (Button)rootView.findViewById(R.id.btnLogOutLinks);
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         croatia = (TextView)rootView.findViewById(R.id.tvCroatia);
         croatia.setMovementMethod(LinkMovementMethod.getInstance());
+        serbia = (TextView)rootView.findViewById(R.id.tvSerbia);
+        serbia.setMovementMethod(LinkMovementMethod.getInstance());
+        bosnia = (TextView)rootView.findViewById(R.id.tvBosnia);
+        bosnia.setMovementMethod(LinkMovementMethod.getInstance());
+        slovenia = (TextView)rootView.findViewById(R.id.tvSlovenia);
+        slovenia.setMovementMethod(LinkMovementMethod.getInstance());
+        hungary = (TextView)rootView.findViewById(R.id.tvHungary);
+        hungary.setMovementMethod(LinkMovementMethod.getInstance());
+        poland = (TextView)rootView.findViewById(R.id.tvPoland);
+        poland.setMovementMethod(LinkMovementMethod.getInstance());
+        russia = (TextView)rootView.findViewById(R.id.tvRussia);
+        russia.setMovementMethod(LinkMovementMethod.getInstance());
+        uk = (TextView)rootView.findViewById(R.id.tvUk);
+        uk.setMovementMethod(LinkMovementMethod.getInstance());
+        usa = (TextView)rootView.findViewById(R.id.tvUsa);
+        usa.setMovementMethod(LinkMovementMethod.getInstance());
+        canada = (TextView)rootView.findViewById(R.id.tvCanada);
+        canada.setMovementMethod(LinkMovementMethod.getInstance());
 
         return rootView;
     }

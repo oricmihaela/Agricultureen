@@ -3,20 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="10">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:background="@color/colorPrimary"
+            app:tabTextColor="@color/colorText"/>
+
 
     </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@color/colorDarkPurple">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created by Mihaela Orić in 2021"
+            android:layout_weight="8"
+            android:textColor="@color/colorLightBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign out"
+            android:layout_weight="2"
+            android:textColor="@color/colorLightBackground"/>
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/signout"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
 
 
 

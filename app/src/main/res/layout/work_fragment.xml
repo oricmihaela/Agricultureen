@@ -3,35 +3,116 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLightBackground"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="10">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorBlue"
+        android:layout_weight="4">
 
         <TextView
+            android:id="@+id/tvWorkPlant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN OUT"
-            android:textSize="11sp"/>
-        <Button
-            android:id="@+id/btnLogOutWork"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/signout"
-            android:layout_marginLeft="5dp"/>
+            android:text="List of planting done with dates and land names:"
+            android:textColor="@color/colorText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPlanting"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDarkBlue"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/tvWorkHarvest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of planting done withd dates and land names:"
+            android:textColor="@color/colorText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHarvesting"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPurple"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="date"
+                android:textColorHint="@color/colorText"
+                android:textColor="@color/colorText"/>
+            <EditText
+                android:id="@+id/etLand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="land name"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbPlanting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planting"
+                    android:textColor="@color/colorText"/>
+
+                <RadioButton android:id="@+id/rbHarvesting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harvesting"
+                    android:textColor="@color/colorText"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnAddWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Work" />
-
-    <TextView
-        android:id="@+id/tvWork"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Work" />
 
 </LinearLayout>
